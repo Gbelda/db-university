@@ -7,7 +7,7 @@
 
 
 ## Entities
-- Departments
+- Faculties
 - Majors
 - Courses
 - Teachers
