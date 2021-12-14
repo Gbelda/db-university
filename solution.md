@@ -25,4 +25,6 @@ laurea (286)
 
 - SELECT * FROM `degrees` WHERE `name` LIKE "%Magistrale%"
 
-7. 
+7. Da quanti dipartimenti è composta l'università? (12)
+
+- SELECT COUNT(id) AS "number_of_departments" FROM `departments`
