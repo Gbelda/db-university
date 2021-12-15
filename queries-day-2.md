@@ -40,5 +40,6 @@
 
 # BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per superare ciascuno dei suoi esami
 
-- SELECT `students`.surname, `students`.name, COUNT(`exam_student`.vote) AS `number_of_tries`, `courses`.name as `course_name` FROM `students` JOIN `exam_student` ON `students`.id = `exam_student`.student_id JOIN `exams` ON `exams`.id = `exam_student`.exam_id JOIN `courses` ON `courses`.id = `exams`.course_id GROUP BY `students`.id, `courses`.id
+- SELECT `students`.surname, `students`.name, COUNT(`exam_student`.vote) AS `number_of_tries`, `courses`.name as `course_name` , `courses`.id, `courses`.period, `courses`.year, `courses`.year, `courses`.website FROM `students` JOIN `exam_student` ON `students`.id = `exam_student`.student_id JOIN `exams` ON `exams`.id = `exam_student`.exam_id JOIN `courses` ON `courses`.id = `exams`.course_id GROUP BY `students`.id, `courses`.id ORDER BY `students`.id
+
 
